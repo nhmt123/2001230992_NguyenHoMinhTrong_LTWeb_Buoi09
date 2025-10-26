@@ -1,0 +1,60 @@
+﻿
+@{
+    ViewBag.Title = "SuaThongTinNV";
+}
+@model Bai03.Models.Employee
+
+<form action="/Home/SuaThongTinNV/@Model.Id" method="post" enctype="multipart/form-data">
+    @Html.AntiForgeryToken()
+    @Html.ValidationSummary(true)
+    <fieldset>
+        <div>
+            Mã NV:
+            <div class="col-md-10">
+                <div style="font: 18px; padding: 5px 0 5px; ">
+                    @Model.Id
+                </div>
+                @Html.HiddenFor(model => model.Id)
+            </div>
+        </div>
+        <div>
+            @Html.LabelFor(model => model.Name, new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.TextBoxFor(n => n.Name)
+                @Html.ValidationMessageFor(model => model.Name)
+            </div>
+        </div>
+        <div>
+            @Html.LabelFor(model => model.Gender, new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.DropDownListFor(model => model.Gender, (SelectList)ViewBag.Gender, new { @class = "form-control" })
+            </div>
+        </div>
+        <div>
+            @Html.LabelFor(model => model.City, new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.TextBoxFor(n => n.City)
+                @Html.ValidationMessageFor(model => model.City)
+            </div>
+        </div>
+        <div>
+            @Html.LabelFor(model => model.DeptId, new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.DropDownList("DeptId")
+            </div>
+        </div>
+        <div>
+            @Html.LabelFor(model => model.Avatar, new { @class = "control-label col-md-2" })
+            <div class="col-md-10">Chọn ảnh mới</div>
+                <input type="file" name="fileUpLoad" />
+                @ViewBag.ThongBao
+            <div>
+                <img src="@Url.Content("~/Content/Images/" + Model.Avatar)" width="120px;" />(Ảnh hiện tại)
+            </div>
+        </div>
+        <p>
+            <input type="submit" value="Save" />
+        </p>
+    </fieldset>
+</form>
+

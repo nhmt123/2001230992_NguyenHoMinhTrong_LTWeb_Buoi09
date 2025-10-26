@@ -1,0 +1,55 @@
+﻿
+@{
+    ViewBag.Title = "DSPhongBan";
+}
+@model List<Bai03.Models.Department>
+
+<style>
+    /* 1. Thiết lập chung cho bảng */
+    table {
+        border-collapse: collapse; /* Gộp các đường viền lại */
+        width: 100%; /* Chiếm toàn bộ chiều rộng */
+        margin: 20px 0; /* Khoảng cách trên dưới */
+        box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1); /* Tạo bóng nhẹ cho bảng */
+        font-family: Arial, sans-serif;
+    }
+
+    /* 2. Thiết lập cho tiêu đề bảng (header) */
+    th {
+        background-color: #0094ff; /* Màu nền xanh */
+        color: white; /* Chữ trắng */
+        text-align: left;
+        padding: 12px 15px;
+    }
+
+    /* 3. Thiết lập cho các ô dữ liệu (cell) */
+    td {
+        border: 1px solid #dddddd; /* Đường viền nhẹ */
+        padding: 8px 15px;
+        text-align: left;
+        vertical-align: middle; /* Căn giữa theo chiều dọc */
+    }
+</style>
+
+<table>
+    <tr>
+        <th>
+            <h1 style="text-align: center; ">BẢNG EMPLOYEE VÀ DEPARTMENT</h1>
+        </th>
+    </tr>
+    @if (Model != null)
+    {
+        foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.ActionLink(item.Name, "ThongTinNV_PB", new { id = item.DeptId })
+                </td>
+            </tr>
+        }
+    }
+</table>
+<p>
+    @Html.ActionLink("Quay Lại Danh Sách Nhân Viên Và Phong Ban", "DanhSachNV_PB")
+</p>
+

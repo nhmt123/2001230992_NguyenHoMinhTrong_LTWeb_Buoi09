@@ -1,0 +1,82 @@
+﻿@{
+    ViewBag.Title = "SuaSach";
+}
+@model Bai02.Models.Sach
+
+<form action="/Home/SuaSach/@Model.MaSach" method="post" enctype="multipart/form-data">
+    @Html.AntiForgeryToken()
+    @Html.ValidationSummary(true)
+    <fieldset>
+        <div>
+            @Html.LabelFor(model => model.MaSach, new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                <div style="font: 18px; padding: 5px 0 5px; ">
+                    @Model.MaSach
+                </div>
+                @Html.HiddenFor(model => model.MaSach)
+            </div>
+        </div>
+        <div>
+            @Html.LabelFor(model => model.TenSach, new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.TextBoxFor(model => model.TenSach, new { Value = Model.TenSach })
+                @Html.ValidationMessageFor(model => model.TenSach)
+            </div>
+        </div>
+        <div>
+            @Html.LabelFor(model => model.GiaBan, new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.TextBoxFor(model => model.GiaBan, new { type = "number", step = "0.01", Value = Model.GiaBan })
+                @Html.ValidationMessageFor(model => model.GiaBan)
+            </div>
+        </div>
+        <div>
+            @Html.LabelFor(model => model.MoTa, new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.TextAreaFor(model => model.MoTa, new { Value = Model.GiaBan })
+            </div>
+        </div>
+        <div>
+            @Html.LabelFor(model => model.AnhBia, new { @class = "control-label col-md-2" })
+            <div class="col-md-10">Chọn ảnh mới </div>
+            <input type="file" name="fileUpLoad" />
+            <div>
+                <img src="@Url.Content("~/Content/Images/" + Model.AnhBia)" width="120px;" />(Ảnh hiện tại)
+            </div>
+            @ViewBag.ThongBao
+        </div>
+        <div>
+            @Html.LabelFor(model => model.NgayCapNhat, new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.TextBoxFor(model => model.NgayCapNhat, new { type = "date", Value = Model.NgayCapNhat?.ToString("yyyy-MM-dd") })
+                @Html.ValidationMessageFor(model => model.NgayCapNhat)
+            </div>
+        </div>
+        <div>
+            @Html.LabelFor(model => model.SoLuongTon, new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.TextBoxFor(model => model.SoLuongTon, new { type = "number", Value = Model.SoLuongTon })
+                @Html.ValidationMessageFor(model => model.SoLuongTon)
+            </div>
+        </div>
+        <div>
+            @Html.LabelFor(model => model.MaCD, new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.DropDownList("MaCD")
+            </div>
+        </div>
+        <div>
+            @Html.LabelFor(model => model.MaNXB, new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.DropDownList("MaNXB")
+            </div>
+        </div><br />
+        <p>
+            <input type="submit" value="Save" />
+        </p>
+    </fieldset>
+</form>
+
+<div>
+    @Html.ActionLink("Back to List", "DMSach")
+</div>

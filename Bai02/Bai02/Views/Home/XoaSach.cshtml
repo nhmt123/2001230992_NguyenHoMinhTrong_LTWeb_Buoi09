@@ -1,0 +1,21 @@
+﻿@{
+    ViewBag.Title = "XoaSach";
+}
+@model Bai02.Models.Sach
+
+<form action="/Home/XoaSach/@Model.MaSach" method="post">
+    <h1>XÁC NHẬN THÔNG TIN SÁCH CẦN XÓA</h1>
+    <h3>Bạn quyết định xóa quyển sách này?</h3>
+    <p>Tên sách: @Model.TenSach</p>
+    <p>Giá bán: @String.Format("{0:0,0}", Model.GiaBan)</p>
+    <p>Mô tả: @Model.MoTa</p>
+    <p>Ảnh bìa: <img src="@Url.Content("~/Content/Images/" + Model.AnhBia)" width="120px;" /></p>
+    <p>Ngày cập nhật: @String.Format("{0:dd/MM/yyyy}", Model.NgayCapNhat)</p>
+    <p>Số lượng tồn: @Model.SoLuongTon</p>
+    <p>Chủ đề: @Model.ChuDe.TenChuDe</p>
+    <p>Nhà xuất bản: @Model.NhaXuatBan.TenNXB</p>
+    <p>
+        <input type="submit" value="Xóa" class="btn btn-default" />
+        @Html.ActionLink("Trở về", "DMSach")
+    </p>
+</form>

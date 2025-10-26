@@ -1,0 +1,106 @@
+﻿
+@{
+    ViewBag.Title = "DSNhanVien";
+}
+@model List<Bai03.Models.Employee>
+
+<style>
+    /* 1. Thiết lập chung cho bảng */
+    table {
+        border-collapse: collapse; /* Gộp các đường viền lại */
+        width: 100%; /* Chiếm toàn bộ chiều rộng */
+        margin: 20px 0; /* Khoảng cách trên dưới */
+        box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1); /* Tạo bóng nhẹ cho bảng */
+        font-family: Arial, sans-serif;
+    }
+
+    /* 2. Thiết lập cho tiêu đề bảng (header) */
+    th {
+        background-color: #0094ff; /* Màu nền xanh */
+        color: white; /* Chữ trắng */
+        text-align: left;
+        padding: 12px 15px;
+    }
+
+    /* 3. Thiết lập cho các ô dữ liệu (cell) */
+    td {
+        border: 1px solid #dddddd; /* Đường viền nhẹ */
+        padding: 8px 15px;
+        text-align: left;
+        vertical-align: middle; /* Căn giữa theo chiều dọc */
+    }
+
+    /* 4. Tô màu xen kẽ cho các dòng */
+    tr:nth-child(even) {
+        background-color: #f3f3f3; /* Màu xám nhạt cho dòng chẵn */
+    }
+
+    /* 5. QUAN TRỌNG: Thiết lập kích thước đồng nhất cho hình ảnh */
+    td img {
+        width: 80px; /* Chiều rộng cố định */
+        height: 120px; /* Chiều cao cố định */
+        object-fit: cover; /* Đảm bảo ảnh cover vừa khung mà không bị méo */
+        display: block; /* Đảm bảo hình ảnh chiếm trọn ô */
+        margin: 0 auto; /* Căn giữa hình ảnh trong ô (nếu ô lớn hơn) */
+        border-radius: 4px; /* Bo góc nhẹ */
+    }
+
+    /* 6. Định dạng nút Create New */
+    p a {
+        display: inline-block;
+        padding: 10px 15px;
+        background-color: #007bff;
+        color: white;
+        text-decoration: none;
+        border-radius: 5px;
+        margin-bottom: 10px;
+    }
+</style>
+
+<h1 style="text-align: center; ">BẢNG EMPLOYEE</h1>
+<p>
+    @Html.ActionLink("Create new", "ThemMoi")
+    @Html.ActionLink("Quay lại", "Index")
+</p>
+<table>
+    <tr>
+        <th>Mã NV</th>
+        <th>Họ và tên</th>
+        <th>Giới tính</th>
+        <th>Thành phố</th>
+        <th>Ảnh</th>
+        <th></th>
+    </tr>
+    @if (Model != null)
+    {
+        foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Id)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Name)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Gender)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.City)
+                </td>
+                <td>
+                    <div class="book-image">
+                        <img src="@Url.Content("~/Content/Images/" + item.Avatar)" alt="Ảnh bìa sách" />
+                    </div>
+                </td>
+                <td>
+                    @Html.ActionLink("Edit", "SuaThongTinNV", new { id = item.Id }) |
+                    @Html.ActionLink("Details", "ThongTinNhanVien", new { id = item.Id }) |
+                    @Html.ActionLink("Delete", "XoaNhanVien", new { id = item.Id })
+                </td>
+            </tr>
+        }
+    }
+</table>
+
+

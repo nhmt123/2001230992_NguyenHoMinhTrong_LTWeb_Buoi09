@@ -1,0 +1,56 @@
+﻿
+@{
+    ViewBag.Title = "ThemMoi";
+}
+@model Bai03.Models.Employee
+
+<h1 style="text-align: center; ">Thêm Nhân Viên Mới</h1>
+
+<form action="/Home/ThemMoi" method="post" enctype="multipart/form-data">
+    @Html.AntiForgeryToken()
+    @Html.ValidationSummary(true)
+    <fieldset>
+        <div>
+            @Html.LabelFor(model => model.Name, new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.TextBoxFor(n => n.Name)
+                @Html.ValidationMessageFor(model => model.Name)
+            </div>
+        </div>
+        <div>
+            @Html.LabelFor(model => model.Gender, new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.DropDownListFor(model => model.Gender, (SelectList)ViewBag.Gender, new { @class = "form-control" })
+            </div>
+        </div>
+        <div>
+            @Html.LabelFor(model => model.City, new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.TextBoxFor(n => n.City)
+                @Html.ValidationMessageFor(model => model.City)
+            </div>
+        </div>
+        <div>
+            @Html.LabelFor(model => model.DeptId, new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.DropDownList("DeptId")
+            </div>
+        </div>
+        <div>
+            @Html.LabelFor(model => model.Avatar, new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                <input type="file" name="fileUpLoad" />
+                @ViewBag.ThongBao
+            </div>
+        </div>
+        <p>
+            <input type="submit" value="Create" />
+        </p>
+    </fieldset>
+</form>
+
+<div>
+    @Html.ActionLink("Back to List", "DSNhanVien")
+</div>
+
+

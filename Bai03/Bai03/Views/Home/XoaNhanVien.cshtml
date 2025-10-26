@@ -1,0 +1,46 @@
+﻿
+@{
+    ViewBag.Title = "XoaNhanVien";
+}
+@model Bai03.Models.Employee
+
+<style>
+    .row {
+        display: flex; /* Sử dụng Flexbox */
+        width: 100%;
+    }
+
+    .col-2 {
+        width: 9%;
+        padding: 10px;
+        box-sizing: border-box; /* Đảm bảo padding không làm tăng kích thước */
+    }
+
+    .col-10 {
+        width: 91%;
+        padding: 10px;
+        box-sizing: border-box;
+    }
+</style>
+
+<form action="/Home/XoaNhanVien/@Model.Id" method="post">
+    <h1>XÁC NHẬN THÔNG TIN NHÂN VIÊN CẦN XÓA</h1>
+    <h3>Bạn quyết định xóa nhân viên này?</h3>
+    <div class="row">
+        <div class="col-2">
+            <p><img src="@Url.Content("~/Content/Images/" + Model.Avatar)" width="120px;" /></p>
+            <p>Mã NV: @Model.Id</p>
+        </div>
+        <div class="col-10">
+            <p>Họ Tên NV: @Model.Name</p>
+            <p>Giới tính: @Model.Gender</p>
+            <p>Thành phố: @Model.City</p>
+            <p>Mã Phòng ban: @Model.Department.DeptId</p>
+        </div>
+    </div>
+    <p>
+        <input type="submit" value="Xóa" class="btn btn-default" />
+        @Html.ActionLink("Trở về", "DSNhanVien")
+    </p>
+</form>
+

@@ -1,0 +1,13 @@
+﻿@{
+    ViewBag.Title = "Details";
+}
+@model Bai01.Models.Theloaitin
+
+<h2>Details</h2>
+<p>Id Loại tin: @Model.IDLoai</p>
+<p>Tên thể loại: @Model.Tentheloai</p>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.IDLoai }) |
+    @Html.ActionLink("Delete", "Delete", new { id = Model.IDLoai }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

@@ -1,0 +1,115 @@
+﻿@{
+    ViewBag.Title = "DMSach";
+}
+
+@model List<Bai02.Models.Sach>
+<style>
+    /* 1. Thiết lập chung cho bảng */
+    table {
+        border-collapse: collapse; /* Gộp các đường viền lại */
+        width: 100%; /* Chiếm toàn bộ chiều rộng */
+        margin: 20px 0; /* Khoảng cách trên dưới */
+        box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1); /* Tạo bóng nhẹ cho bảng */
+        font-family: Arial, sans-serif;
+    }
+
+    /* 2. Thiết lập cho tiêu đề bảng (header) */
+    th {
+        background-color: #4CAF50; /* Màu nền xanh */
+        color: white; /* Chữ trắng */
+        text-align: left;
+        padding: 12px 15px;
+    }
+
+    /* 3. Thiết lập cho các ô dữ liệu (cell) */
+    td {
+        border: 1px solid #dddddd; /* Đường viền nhẹ */
+        padding: 8px 15px;
+        text-align: left;
+        vertical-align: middle; /* Căn giữa theo chiều dọc */
+    }
+
+    /* 4. Tô màu xen kẽ cho các dòng */
+    tr:nth-child(even) {
+        background-color: #f3f3f3; /* Màu xám nhạt cho dòng chẵn */
+    }
+
+    /* 5. QUAN TRỌNG: Thiết lập kích thước đồng nhất cho hình ảnh */
+    td img {
+        width: 80px; /* Chiều rộng cố định */
+        height: 120px; /* Chiều cao cố định */
+        object-fit: cover; /* Đảm bảo ảnh cover vừa khung mà không bị méo */
+        display: block; /* Đảm bảo hình ảnh chiếm trọn ô */
+        margin: 0 auto; /* Căn giữa hình ảnh trong ô (nếu ô lớn hơn) */
+        border-radius: 4px; /* Bo góc nhẹ */
+    }
+
+    /* 6. Định dạng nút Create New */
+    p a {
+        display: inline-block;
+        padding: 10px 15px;
+        background-color: #007bff;
+        color: white;
+        text-decoration: none;
+        border-radius: 5px;
+        margin-bottom: 10px;
+    }
+</style>
+
+<h2>QUẢN LÝ THÔNG TIN SÁCH</h2>
+<p>
+    @Html.ActionLink("Create new", "ThemMoi")
+</p>
+<table>
+    <tr>
+        <th>Tên sách</th>
+        <th>Giá bán</th>
+        <th>Mô tả</th>
+        <th>Ảnh bìa</th>
+        <th>Ngày cập nhật</th>
+        <th>Số lượng</th>
+        <th>Tên chủ đề</th>
+        <th>Tên nhà xuất bản</th>
+        <th></th>
+    </tr>
+    @if (Model != null)
+    {
+        foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.TenSach)
+                </td>
+                <td>
+                    @String.Format("{0:0,0}", item.GiaBan)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.MoTa)
+                </td>
+                <td>
+                    <div class="book-image">
+                        <img src="@Url.Content("~/Content/Images/" + item.AnhBia)" alt="Ảnh bìa sách" />
+                    </div>
+                </td>
+                <td>
+                    @String.Format("{0:dd/MM/yyyy}", item.NgayCapNhat)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.SoLuongTon)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.ChuDe.TenChuDe)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.NhaXuatBan.TenNXB)
+                </td>
+                <td>
+                    @Html.ActionLink("Sửa", "SuaSach", new { id = item.MaSach }) |
+                    @Html.ActionLink("Chi Tiết", "ChiTietSach", new { id = item.MaSach }) |
+                    @Html.ActionLink("Xóa", "XoaSach", new { id = item.MaSach }) 
+                </td>
+            </tr>
+        }
+    }
+</table>
+

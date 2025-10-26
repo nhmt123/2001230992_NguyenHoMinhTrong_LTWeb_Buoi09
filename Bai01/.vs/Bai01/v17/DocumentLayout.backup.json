@@ -1,0 +1,176 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Visual Studio 2022 Project\\Projects\\LTWeb08\\Bai01\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{71B3E877-1350-44BF-BA12-2CD7BD0222EC}|Bai01\\Bai01.csproj|c:\\visual studio 2022 project\\projects\\ltweb08\\bai01\\bai01\\views\\home\\themmoi.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{71B3E877-1350-44BF-BA12-2CD7BD0222EC}|Bai01\\Bai01.csproj|solutionrelative:bai01\\views\\home\\themmoi.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{71B3E877-1350-44BF-BA12-2CD7BD0222EC}|Bai01\\Bai01.csproj|c:\\visual studio 2022 project\\projects\\ltweb08\\bai01\\bai01\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{71B3E877-1350-44BF-BA12-2CD7BD0222EC}|Bai01\\Bai01.csproj|solutionrelative:bai01\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{71B3E877-1350-44BF-BA12-2CD7BD0222EC}|Bai01\\Bai01.csproj|c:\\visual studio 2022 project\\projects\\ltweb08\\bai01\\bai01\\views\\home\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{71B3E877-1350-44BF-BA12-2CD7BD0222EC}|Bai01\\Bai01.csproj|solutionrelative:bai01\\views\\home\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{71B3E877-1350-44BF-BA12-2CD7BD0222EC}|Bai01\\Bai01.csproj|c:\\visual studio 2022 project\\projects\\ltweb08\\bai01\\bai01\\views\\home\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{71B3E877-1350-44BF-BA12-2CD7BD0222EC}|Bai01\\Bai01.csproj|solutionrelative:bai01\\views\\home\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{71B3E877-1350-44BF-BA12-2CD7BD0222EC}|Bai01\\Bai01.csproj|c:\\visual studio 2022 project\\projects\\ltweb08\\bai01\\bai01\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{71B3E877-1350-44BF-BA12-2CD7BD0222EC}|Bai01\\Bai01.csproj|solutionrelative:bai01\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{71B3E877-1350-44BF-BA12-2CD7BD0222EC}|Bai01\\Bai01.csproj|c:\\visual studio 2022 project\\projects\\ltweb08\\bai01\\bai01\\views\\_viewstart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{71B3E877-1350-44BF-BA12-2CD7BD0222EC}|Bai01\\Bai01.csproj|solutionrelative:bai01\\views\\_viewstart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{71B3E877-1350-44BF-BA12-2CD7BD0222EC}|Bai01\\Bai01.csproj|c:\\visual studio 2022 project\\projects\\ltweb08\\bai01\\bai01\\views\\home\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{71B3E877-1350-44BF-BA12-2CD7BD0222EC}|Bai01\\Bai01.csproj|solutionrelative:bai01\\views\\home\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{71B3E877-1350-44BF-BA12-2CD7BD0222EC}|Bai01\\Bai01.csproj|c:\\visual studio 2022 project\\projects\\ltweb08\\bai01\\bai01\\models\\tintuc.context.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{71B3E877-1350-44BF-BA12-2CD7BD0222EC}|Bai01\\Bai01.csproj|solutionrelative:bai01\\models\\tintuc.context.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{71B3E877-1350-44BF-BA12-2CD7BD0222EC}|Bai01\\Bai01.csproj|c:\\visual studio 2022 project\\projects\\ltweb08\\bai01\\bai01\\models\\tintuc.edmx||{C99AEA30-8E36-4515-B76F-496F5A48A6AA}|",
+      "RelativeMoniker": "D:0:0:{71B3E877-1350-44BF-BA12-2CD7BD0222EC}|Bai01\\Bai01.csproj|solutionrelative:bai01\\models\\tintuc.edmx||{C99AEA30-8E36-4515-B76F-496F5A48A6AA}|"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 5,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "_ViewStart.cshtml",
+              "DocumentMoniker": "C:\\Visual Studio 2022 Project\\Projects\\LTWeb08\\Bai01\\Bai01\\Views\\_ViewStart.cshtml",
+              "RelativeDocumentMoniker": "Bai01\\Views\\_ViewStart.cshtml",
+              "ToolTip": "C:\\Visual Studio 2022 Project\\Projects\\LTWeb08\\Bai01\\Bai01\\Views\\_ViewStart.cshtml",
+              "RelativeToolTip": "Bai01\\Views\\_ViewStart.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-10-25T14:36:01.612Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Delete.cshtml",
+              "DocumentMoniker": "C:\\Visual Studio 2022 Project\\Projects\\LTWeb08\\Bai01\\Bai01\\Views\\Home\\Delete.cshtml",
+              "RelativeDocumentMoniker": "Bai01\\Views\\Home\\Delete.cshtml",
+              "ToolTip": "C:\\Visual Studio 2022 Project\\Projects\\LTWeb08\\Bai01\\Bai01\\Views\\Home\\Delete.cshtml",
+              "RelativeToolTip": "Bai01\\Views\\Home\\Delete.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAALAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-10-25T14:33:55.371Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Details.cshtml",
+              "DocumentMoniker": "C:\\Visual Studio 2022 Project\\Projects\\LTWeb08\\Bai01\\Bai01\\Views\\Home\\Details.cshtml",
+              "RelativeDocumentMoniker": "Bai01\\Views\\Home\\Details.cshtml",
+              "ToolTip": "C:\\Visual Studio 2022 Project\\Projects\\LTWeb08\\Bai01\\Bai01\\Views\\Home\\Details.cshtml",
+              "RelativeToolTip": "Bai01\\Views\\Home\\Details.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-10-25T14:33:30.275Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "C:\\Visual Studio 2022 Project\\Projects\\LTWeb08\\Bai01\\Bai01\\Views\\Home\\Edit.cshtml",
+              "RelativeDocumentMoniker": "Bai01\\Views\\Home\\Edit.cshtml",
+              "ToolTip": "C:\\Visual Studio 2022 Project\\Projects\\LTWeb08\\Bai01\\Bai01\\Views\\Home\\Edit.cshtml",
+              "RelativeToolTip": "Bai01\\Views\\Home\\Edit.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-10-25T14:33:05.904Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ThemMoi.cshtml",
+              "DocumentMoniker": "C:\\Visual Studio 2022 Project\\Projects\\LTWeb08\\Bai01\\Bai01\\Views\\Home\\ThemMoi.cshtml",
+              "RelativeDocumentMoniker": "Bai01\\Views\\Home\\ThemMoi.cshtml",
+              "ToolTip": "C:\\Visual Studio 2022 Project\\Projects\\LTWeb08\\Bai01\\Bai01\\Views\\Home\\ThemMoi.cshtml",
+              "RelativeToolTip": "Bai01\\Views\\Home\\ThemMoi.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-10-25T14:32:39.448Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Visual Studio 2022 Project\\Projects\\LTWeb08\\Bai01\\Bai01\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "Bai01\\Views\\Home\\Index.cshtml",
+              "ToolTip": "C:\\Visual Studio 2022 Project\\Projects\\LTWeb08\\Bai01\\Bai01\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "Bai01\\Views\\Home\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-10-25T14:31:45.462Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "C:\\Visual Studio 2022 Project\\Projects\\LTWeb08\\Bai01\\Bai01\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "Bai01\\Controllers\\HomeController.cs",
+              "ToolTip": "C:\\Visual Studio 2022 Project\\Projects\\LTWeb08\\Bai01\\Bai01\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "Bai01\\Controllers\\HomeController.cs",
+              "ViewState": "AgIAACIAAAAAAAAAAAAwwDAAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-25T14:29:15.123Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "TinTuc.Context.cs",
+              "DocumentMoniker": "C:\\Visual Studio 2022 Project\\Projects\\LTWeb08\\Bai01\\Bai01\\Models\\TinTuc.Context.cs",
+              "RelativeDocumentMoniker": "Bai01\\Models\\TinTuc.Context.cs",
+              "ToolTip": "C:\\Visual Studio 2022 Project\\Projects\\LTWeb08\\Bai01\\Bai01\\Models\\TinTuc.Context.cs",
+              "RelativeToolTip": "Bai01\\Models\\TinTuc.Context.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-25T14:28:54.431Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "TinTuc.edmx [Diagram1]",
+              "DocumentMoniker": "C:\\Visual Studio 2022 Project\\Projects\\LTWeb08\\Bai01\\Bai01\\Models\\TinTuc.edmx",
+              "RelativeDocumentMoniker": "Bai01\\Models\\TinTuc.edmx",
+              "ToolTip": "C:\\Visual Studio 2022 Project\\Projects\\LTWeb08\\Bai01\\Bai01\\Models\\TinTuc.edmx [Diagram1]",
+              "RelativeToolTip": "Bai01\\Models\\TinTuc.edmx [Diagram1]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001116|",
+              "WhenOpened": "2025-10-25T14:28:13.875Z",
+              "EditorCaption": " [Diagram1]"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

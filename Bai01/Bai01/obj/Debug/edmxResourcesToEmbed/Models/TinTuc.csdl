@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="QL_TinTucModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="Theloaitin">
+    <Key>
+      <PropertyRef Name="IDLoai" />
+    </Key>
+    <Property Name="IDLoai" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Tentheloai" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="Tintucs" Relationship="Self.fk_tt_tlt" FromRole="Theloaitin" ToRole="Tintuc" />
+  </EntityType>
+  <EntityType Name="Tintuc">
+    <Key>
+      <PropertyRef Name="IdTin" />
+    </Key>
+    <Property Name="IdTin" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="IDLoai" Type="Int32" />
+    <Property Name="Tieudetin" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="Noidungtin" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="Theloaitin" Relationship="Self.fk_tt_tlt" FromRole="Tintuc" ToRole="Theloaitin" />
+  </EntityType>
+  <Association Name="fk_tt_tlt">
+    <End Role="Theloaitin" Type="Self.Theloaitin" Multiplicity="0..1" />
+    <End Role="Tintuc" Type="Self.Tintuc" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Theloaitin">
+        <PropertyRef Name="IDLoai" />
+      </Principal>
+      <Dependent Role="Tintuc">
+        <PropertyRef Name="IDLoai" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="QL_TinTucEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Theloaitins" EntityType="Self.Theloaitin" />
+    <EntitySet Name="Tintucs" EntityType="Self.Tintuc" />
+    <AssociationSet Name="fk_tt_tlt" Association="Self.fk_tt_tlt">
+      <End Role="Theloaitin" EntitySet="Theloaitins" />
+      <End Role="Tintuc" EntitySet="Tintucs" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

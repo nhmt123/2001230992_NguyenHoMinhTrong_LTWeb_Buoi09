@@ -1,0 +1,121 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Visual Studio 2022 Project\\Projects\\LTWeb08\\Bai03\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{934C827C-8D29-46A6-8443-D71F99ACA756}|Bai03\\Bai03.csproj|c:\\visual studio 2022 project\\projects\\ltweb08\\bai03\\bai03\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{934C827C-8D29-46A6-8443-D71F99ACA756}|Bai03\\Bai03.csproj|solutionrelative:bai03\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{934C827C-8D29-46A6-8443-D71F99ACA756}|Bai03\\Bai03.csproj|c:\\visual studio 2022 project\\projects\\ltweb08\\bai03\\bai03\\views\\home\\danhsachnv_pb.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{934C827C-8D29-46A6-8443-D71F99ACA756}|Bai03\\Bai03.csproj|solutionrelative:bai03\\views\\home\\danhsachnv_pb.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{934C827C-8D29-46A6-8443-D71F99ACA756}|Bai03\\Bai03.csproj|c:\\visual studio 2022 project\\projects\\ltweb08\\bai03\\bai03\\views\\home\\dsphongban.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{934C827C-8D29-46A6-8443-D71F99ACA756}|Bai03\\Bai03.csproj|solutionrelative:bai03\\views\\home\\dsphongban.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{934C827C-8D29-46A6-8443-D71F99ACA756}|Bai03\\Bai03.csproj|c:\\visual studio 2022 project\\projects\\ltweb08\\bai03\\bai03\\views\\home\\thongtinnv_pb.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{934C827C-8D29-46A6-8443-D71F99ACA756}|Bai03\\Bai03.csproj|solutionrelative:bai03\\views\\home\\thongtinnv_pb.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{934C827C-8D29-46A6-8443-D71F99ACA756}|Bai03\\Bai03.csproj|C:\\Visual Studio 2022 Project\\Projects\\LTWeb08\\Bai03\\bai03\\views\\home\\dsnhanvien.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{934C827C-8D29-46A6-8443-D71F99ACA756}|Bai03\\Bai03.csproj|solutionrelative:bai03\\views\\home\\dsnhanvien.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{934C827C-8D29-46A6-8443-D71F99ACA756}|Bai03\\Bai03.csproj|C:\\Visual Studio 2022 Project\\Projects\\LTWeb08\\Bai03\\bai03\\models\\ql_nhansu.edmx||{C99AEA30-8E36-4515-B76F-496F5A48A6AA}|",
+      "RelativeMoniker": "D:0:0:{934C827C-8D29-46A6-8443-D71F99ACA756}|Bai03\\Bai03.csproj|solutionrelative:bai03\\models\\ql_nhansu.edmx||{C99AEA30-8E36-4515-B76F-496F5A48A6AA}|"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 4,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ThongTinNV_PB.cshtml",
+              "DocumentMoniker": "C:\\Visual Studio 2022 Project\\Projects\\LTWeb08\\Bai03\\Bai03\\Views\\Home\\ThongTinNV_PB.cshtml",
+              "RelativeDocumentMoniker": "Bai03\\Views\\Home\\ThongTinNV_PB.cshtml",
+              "ToolTip": "C:\\Visual Studio 2022 Project\\Projects\\LTWeb08\\Bai03\\Bai03\\Views\\Home\\ThongTinNV_PB.cshtml*",
+              "RelativeToolTip": "Bai03\\Views\\Home\\ThongTinNV_PB.cshtml*",
+              "ViewState": "AgIAACkAAAAAAAAAAAAkwGgAAAA6AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-10-26T04:25:12.511Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "DSPhongBan.cshtml",
+              "DocumentMoniker": "C:\\Visual Studio 2022 Project\\Projects\\LTWeb08\\Bai03\\Bai03\\Views\\Home\\DSPhongBan.cshtml",
+              "RelativeDocumentMoniker": "Bai03\\Views\\Home\\DSPhongBan.cshtml",
+              "ToolTip": "C:\\Visual Studio 2022 Project\\Projects\\LTWeb08\\Bai03\\Bai03\\Views\\Home\\DSPhongBan.cshtml",
+              "RelativeToolTip": "Bai03\\Views\\Home\\DSPhongBan.cshtml",
+              "ViewState": "AgIAACcAAAAAAAAAAAAAAAIAAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-10-26T04:05:09.714Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "DanhSachNV_PB.cshtml",
+              "DocumentMoniker": "C:\\Visual Studio 2022 Project\\Projects\\LTWeb08\\Bai03\\Bai03\\Views\\Home\\DanhSachNV_PB.cshtml",
+              "RelativeDocumentMoniker": "Bai03\\Views\\Home\\DanhSachNV_PB.cshtml",
+              "ToolTip": "C:\\Visual Studio 2022 Project\\Projects\\LTWeb08\\Bai03\\Bai03\\Views\\Home\\DanhSachNV_PB.cshtml",
+              "RelativeToolTip": "Bai03\\Views\\Home\\DanhSachNV_PB.cshtml",
+              "ViewState": "AgIAADwAAAAAAAAAAAAAAD0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-10-26T03:48:27.437Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "DSNhanVien.cshtml",
+              "DocumentMoniker": "C:\\Visual Studio 2022 Project\\Projects\\LTWeb08\\Bai03\\Bai03\\Views\\Home\\DSNhanVien.cshtml",
+              "RelativeDocumentMoniker": "Bai03\\Views\\Home\\DSNhanVien.cshtml",
+              "ToolTip": "C:\\Visual Studio 2022 Project\\Projects\\LTWeb08\\Bai03\\Bai03\\Views\\Home\\DSNhanVien.cshtml",
+              "RelativeToolTip": "Bai03\\Views\\Home\\DSNhanVien.cshtml",
+              "ViewState": "AgIAAE4AAAAAAAAAAAAAAB4AAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-10-25T17:11:25.398Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "C:\\Visual Studio 2022 Project\\Projects\\LTWeb08\\Bai03\\Bai03\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "Bai03\\Controllers\\HomeController.cs",
+              "ToolTip": "C:\\Visual Studio 2022 Project\\Projects\\LTWeb08\\Bai03\\Bai03\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "Bai03\\Controllers\\HomeController.cs",
+              "ViewState": "AgIAAKoAAAAAAAAAAAAiwLkAAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-25T17:09:00.23Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "QL_NhanSu.edmx [Diagram1]",
+              "DocumentMoniker": "C:\\Visual Studio 2022 Project\\Projects\\LTWeb08\\Bai03\\Bai03\\Models\\QL_NhanSu.edmx",
+              "RelativeDocumentMoniker": "Bai03\\Models\\QL_NhanSu.edmx",
+              "ToolTip": "C:\\Visual Studio 2022 Project\\Projects\\LTWeb08\\Bai03\\Bai03\\Models\\QL_NhanSu.edmx [Diagram1]",
+              "RelativeToolTip": "Bai03\\Models\\QL_NhanSu.edmx [Diagram1]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001116|",
+              "WhenOpened": "2025-10-25T17:22:58.949Z",
+              "EditorCaption": " [Diagram1]"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

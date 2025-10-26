@@ -1,0 +1,134 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="QL_TinTucModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2008" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="Theloaitin">
+          <Key>
+            <PropertyRef Name="IDLoai" />
+          </Key>
+          <Property Name="IDLoai" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Tentheloai" Type="nvarchar" MaxLength="100" />
+        </EntityType>
+        <EntityType Name="Tintuc">
+          <Key>
+            <PropertyRef Name="IdTin" />
+          </Key>
+          <Property Name="IdTin" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="IDLoai" Type="int" />
+          <Property Name="Tieudetin" Type="nvarchar" MaxLength="100" />
+          <Property Name="Noidungtin" Type="ntext" />
+        </EntityType>
+        <Association Name="fk_tt_tlt">
+          <End Role="Theloaitin" Type="Self.Theloaitin" Multiplicity="0..1" />
+          <End Role="Tintuc" Type="Self.Tintuc" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Theloaitin">
+              <PropertyRef Name="IDLoai" />
+            </Principal>
+            <Dependent Role="Tintuc">
+              <PropertyRef Name="IDLoai" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="QL_TinTucModelStoreContainer">
+          <EntitySet Name="Theloaitin" EntityType="Self.Theloaitin" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Tintuc" EntityType="Self.Tintuc" Schema="dbo" store:Type="Tables" />
+          <AssociationSet Name="fk_tt_tlt" Association="Self.fk_tt_tlt">
+            <End Role="Theloaitin" EntitySet="Theloaitin" />
+            <End Role="Tintuc" EntitySet="Tintuc" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="QL_TinTucModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="Theloaitin">
+          <Key>
+            <PropertyRef Name="IDLoai" />
+          </Key>
+          <Property Name="IDLoai" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Tentheloai" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+          <NavigationProperty Name="Tintucs" Relationship="Self.fk_tt_tlt" FromRole="Theloaitin" ToRole="Tintuc" />
+        </EntityType>
+        <EntityType Name="Tintuc">
+          <Key>
+            <PropertyRef Name="IdTin" />
+          </Key>
+          <Property Name="IdTin" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="IDLoai" Type="Int32" />
+          <Property Name="Tieudetin" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="Noidungtin" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <NavigationProperty Name="Theloaitin" Relationship="Self.fk_tt_tlt" FromRole="Tintuc" ToRole="Theloaitin" />
+        </EntityType>
+        <Association Name="fk_tt_tlt">
+          <End Role="Theloaitin" Type="Self.Theloaitin" Multiplicity="0..1" />
+          <End Role="Tintuc" Type="Self.Tintuc" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Theloaitin">
+              <PropertyRef Name="IDLoai" />
+            </Principal>
+            <Dependent Role="Tintuc">
+              <PropertyRef Name="IDLoai" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="QL_TinTucEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="Theloaitins" EntityType="Self.Theloaitin" />
+          <EntitySet Name="Tintucs" EntityType="Self.Tintuc" />
+          <AssociationSet Name="fk_tt_tlt" Association="Self.fk_tt_tlt">
+            <End Role="Theloaitin" EntitySet="Theloaitins" />
+            <End Role="Tintuc" EntitySet="Tintucs" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="QL_TinTucModelStoreContainer" CdmEntityContainer="QL_TinTucEntities">
+          <EntitySetMapping Name="Theloaitins">
+            <EntityTypeMapping TypeName="QL_TinTucModel.Theloaitin">
+              <MappingFragment StoreEntitySet="Theloaitin">
+                <ScalarProperty Name="IDLoai" ColumnName="IDLoai" />
+                <ScalarProperty Name="Tentheloai" ColumnName="Tentheloai" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Tintucs">
+            <EntityTypeMapping TypeName="QL_TinTucModel.Tintuc">
+              <MappingFragment StoreEntitySet="Tintuc">
+                <ScalarProperty Name="IdTin" ColumnName="IdTin" />
+                <ScalarProperty Name="IDLoai" ColumnName="IDLoai" />
+                <ScalarProperty Name="Tieudetin" ColumnName="Tieudetin" />
+                <ScalarProperty Name="Noidungtin" ColumnName="Noidungtin" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="true" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="true" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

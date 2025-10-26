@@ -1,0 +1,30 @@
+﻿@{
+    ViewBag.Title = "Delete";
+}
+
+@model Bai01.Models.Theloaitin
+<h2>Delete</h2>
+
+<form action="/Home/Delete/@Model.IDLoai" method="post">
+    <h3>Bạn có chắc chắn muốn xóa thể loại tin này?</h3>
+    <fieldset>
+        <legend>Thông tin Thể loại tin</legend>
+        <div class="display-label">
+            <b>ID Thể loại:</b>
+        </div>
+        <div class="display-field">
+            @Html.DisplayFor(model => model.IDLoai)
+        </div>
+
+        <div class="display-label">
+            <b>Tên thể loại:</b>
+        </div>
+        <div class="display-field">
+            @Html.DisplayFor(model => model.Tentheloai)
+        </div>
+    </fieldset>
+    <p>
+        <input type="submit" value="Xác nhận xóa" style="color: red;" /> |
+        @Html.ActionLink("Quay lại danh sách", "Index")
+    </p>
+</form>

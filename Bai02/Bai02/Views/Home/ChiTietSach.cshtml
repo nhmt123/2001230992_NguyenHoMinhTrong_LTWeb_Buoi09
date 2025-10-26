@@ -1,0 +1,18 @@
+﻿@{
+    ViewBag.Title = "ChiTietSach";
+}
+@model Bai02.Models.Sach
+
+<h1>THÔNG TIN CHI TIẾT SÁCH</h1>
+<p>Tên sách: @Model.TenSach</p>
+<p>Giá bán: @String.Format("{0:0,0}", Model.GiaBan)</p>
+<p>Mô tả: @Model.MoTa</p>
+<p>Ảnh bìa: <img src="@Url.Content("~/Content/Images/" + Model.AnhBia)" width="120px;" /></p>
+<p>Ngày cập nhật: @String.Format("{0:dd/MM/yyyy}", Model.NgayCapNhat)</p>
+<p>Số lượng tồn: @Model.SoLuongTon</p>
+<p>Chủ đề: @Model.ChuDe.TenChuDe</p>
+<p>Nhà xuất bản: @Model.NhaXuatBan.TenNXB</p>
+<p>
+    @Html.ActionLink("Điều chỉnh", "SuaSach", new { id = Model.MaSach }) |
+    @Html.ActionLink("Trở về", "DMSach")
+</p>

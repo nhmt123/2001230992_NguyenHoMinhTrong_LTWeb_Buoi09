@@ -1,0 +1,68 @@
+﻿@{
+    ViewBag.Title = "ThemMoi";
+}
+@model Bai02.Models.Sach
+
+<h1>Thêm Sách Mới</h1>
+<form action="/Home/ThemMoi" method="post" enctype="multipart/form-data">
+    @Html.AntiForgeryToken()
+    @Html.ValidationSummary(true)
+    <fieldset>
+        <div>
+            @Html.LabelFor(model => model.TenSach, new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                <input type="text" name="TenSach" />
+                @Html.ValidationMessageFor(model => model.TenSach)
+            </div>
+        </div>
+        <div>
+            @Html.LabelFor(model => model.GiaBan, new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                <input type="text" name="GiaBan" />
+                @Html.ValidationMessageFor(model => model.GiaBan)
+            </div>
+        </div>
+        <div>
+            @Html.LabelFor(model => model.MoTa, new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                <textarea name="MoTa" placeholder="Mô tả thông tin sách"></textarea>
+            </div>
+        </div>
+        <div>
+            @Html.LabelFor(model => model.AnhBia, new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                <input type="file" name="fileUpLoad" />
+                @ViewBag.ThongBao
+            </div>
+        </div>
+        <div>
+            @Html.LabelFor(model => model.NgayCapNhat, new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                <input type="date" name="NgayCapNhat" />
+                @Html.ValidationMessageFor(model => model.NgayCapNhat)
+            </div>
+        </div>
+        <div>
+            @Html.LabelFor(model => model.SoLuongTon, new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                <input type="text" name="SoLuongTon" />
+                @Html.ValidationMessageFor(model => model.SoLuongTon)
+            </div>
+        </div>
+        <div>
+            @Html.LabelFor(model => model.MaCD, new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.DropDownList("MaCD")
+            </div>
+        </div>
+        <div>
+            @Html.LabelFor(model => model.MaNXB, new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.DropDownList("MaNXB")
+            </div>
+        </div><br />
+        <p>
+            <input type="submit" value="Thêm Sách" />
+        </p>
+    </fieldset>
+</form>
